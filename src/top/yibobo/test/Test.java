@@ -21,7 +21,7 @@ public class Test{
 		//System.out.println(qtd.update(book,"12"));
 		
 		//System.out.println(qtd.delete("12"));
-		//...
+		//按照需求调不同的方法
 	}
 
 }
