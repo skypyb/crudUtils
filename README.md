@@ -4,13 +4,13 @@
 对之后框架的学习也是大有好处
 
   
-# change log
+## change log
   
   
 #### v1.0.7(2018-06-04)  
 目前上传版本，之前的修改都不记得了，暂时没发现有什么bug
 
-# Explain
+## Explain
 这个小工具大致几个主要功能及其对应的类
 * QueryUtil类：基于JDBC和反射的CURD工具，执行sql并返回不同的结果，和apache的DBUtils.jar包部分功能类似
 
