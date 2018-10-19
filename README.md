@@ -25,7 +25,9 @@ test 包下有大概使用方式
 * TypeHandlerFactory类：数据处理，实现了一个Factory模式，传入一个需要转换的Object对象和转换后的数据类型Class，实现类型的转换 
 <br> 
 <br> 
-`目前实现的类型转换`:
-     >基本数据类型及其包装类以及String类互相转换  
-     >结果集转换为一个对象  
-     >java.sql.Date与java.util.Date和String之间的转换  
+  
+`目前实现的类型转换`:  
+```
+基本数据类型及其包装类以及String类互相转换  
+结果集转换为一个对象  
+java.sql.Date与java.util.Date和String之间的转换  
