@@ -13,7 +13,7 @@ public class TypeHandlerFactory {
      */
     public static TypeHandler creatTypeHandler(Class cls) {
 
-        if (cls.isPrimitive() || cls == String.class || Number.class.isAssignableFrom(cls)) {
+        if (cls.isPrimitive() || cls == String.class || Number.class.isAssignableFrom(cls) || cls == Boolean.class) {
             return new PrimitiveHandler();//基本数据类型及其包装类以及String类处理器
         } else if (cls.getSimpleName().equals("Date") || Date.class.isAssignableFrom(cls)) {
             return new DateHandler();//java.sql.Date与java.util.Date处理器,字符串转Date
