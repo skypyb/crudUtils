@@ -7,6 +7,11 @@ test 包下有大概使用方式
 ## change log
  
    
+#### v1.1.0(2019-01-08)
+handler包下的数据处理类中的基本数据类型处理类修改。  
+增加了对于Boolean类的支持。
+  
+   
 #### v1.0.9(2018-11-23)
 handler包下的数据处理类中的日期时间处理类修改。
 从以往的只有单项String转Date基础上，增加了Date及其子类向String的转换。  
@@ -15,7 +20,8 @@ handler包下的数据处理类中的日期时间处理类修改。
 #### v1.0.8(2018-10-19)  
 时隔四个月的更新。去除了无用文件。  
 编辑器对名字为 isXxxx 的属性进行 getter、setter 生成时会抹去 is，针对这种会出现异常的情况作了处理( BeanUtil.java 文件下)  
-在 PrimitiveHandler.java 文件下添加了对于 boolean 的包装类 Boolean 的反射处理
+在 PrimitiveHandler.java 文件下添加了对于 boolean 的包装类 Boolean 的反射处理  
+
 #### v1.0.7(2018-06-04)  
 目前上传版本，之前的修改都不记得了，暂时没发现有什么bug  
 
