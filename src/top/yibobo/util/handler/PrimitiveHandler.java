@@ -25,24 +25,13 @@ public class PrimitiveHandler implements TypeHandler {
 
         //如果要转的类型是布尔值
         if (type.getName().equals("boolean")) {
-
-            if (value.toString().equals("true")
-                    || value.toString().equals("false")) {
-                if (value.toString().equals("true")) {
-                    return true;
-                }
-            }
-            return false;
+            return "true".equals(value.toString());
+        }
+        //是布尔值的包装类的话
+        if (type.getSimpleName().equals("Boolean")) {
+            return Boolean.valueOf("true".equals(value.toString()));
         }
 
-        //如果是 boolean 的包装类
-        if (type == Boolean.class) {
-            if (value.toString().equals("true") || value.toString().equals("false")) {
-                if (value.toString().equals("true")) return true;
-                else return false;
-            }
-            return null;
-        }
 
         //如果要转的是char就提取value的String值第一个字
         if (type.getName().equals("char")) {
